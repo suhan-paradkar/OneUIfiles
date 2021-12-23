@@ -22,7 +22,7 @@ jobs:
     - name: Store generated universal APK file
       uses: actions/upload-artifact@v2
       with:
-        name: Instabar-app-universal
+        name: OneUIFiles
         path: |
-            ./app/build/outputs/apk/debug/app_debug.apk
+            ./app/build/outputs/apk/debug/*.apk
             ./app/build/outputs/apk/debug/output-metadata.json
