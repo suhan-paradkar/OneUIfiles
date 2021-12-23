@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-  ~ Copyright (c) 2018 Hai Zhang <dreaming.in.code.zh@gmail.com>
-  ~ All Rights Reserved.
-  -->
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -39,7 +35,7 @@
         android:resizeableActivity="true"
         android:roundIcon="@mipmap/launcher_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MaterialFiles"
+        android:theme="@style/OneUITheme"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
 
         <activity
@@ -131,7 +127,7 @@
             android:name="me.zhanghai.android.files.filelist.OpenFileActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
-            android:theme="@style/Theme.MaterialFiles.Translucent">
+            android:theme="@style/OneUITheme">
             <intent-filter>
                 <action android:name="me.zhanghai.android.files.intent.action.OPEN_FILE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -144,60 +140,60 @@
             android:autoRemoveFromRecents="true"
             android:icon="@drawable/edit_icon"
             android:label="@string/file_edit_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.filelist.OpenFileAsDialogActivity"
             android:autoRemoveFromRecents="true"
             android:icon="@drawable/open_as_icon"
             android:label="@string/file_open_as_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.AddStorageDialogActivity"
             android:label="@string/storage_add_storage_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.EditDeviceStorageDialogActivity"
             android:label="@string/storage_edit_device_storage_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.AddDocumentTreeActivity"
             android:label="@string/storage_add_document_tree_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.EditDocumentTreeDialogActivity"
             android:label="@string/storage_edit_document_tree_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.EditSftpServerActivity"
             android:label="@string/storage_edit_sftp_server_title_edit"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.AddLanSmbServerActivity"
             android:label="@string/storage_add_lan_smb_server_title"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.storage.EditSmbServerActivity"
             android:label="@string/storage_edit_smb_server_title_edit"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.navigation.EditBookmarkDirectoryDialogActivity"
             android:label="@string/navigation_edit_bookmark_directory_title"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.ftpserver.FtpServerActivity"
             android:label="@string/ftp_server_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles">
+            android:theme="@style/OneUITheme">
             <intent-filter>
                 <action android:name="me.zhanghai.android.files.intent.action.MANAGE_FTP_SERVER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -212,7 +208,7 @@
             android:name="me.zhanghai.android.files.settings.SettingsActivity"
             android:label="@string/settings_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles">
+            android:theme="@style/OneUITheme">
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -223,40 +219,40 @@
             android:name="me.zhanghai.android.files.storage.StorageListActivity"
             android:label="@string/storage_list_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.settings.StandardDirectoryListActivity"
             android:label="@string/settings_standard_directory_list_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.settings.BookmarkDirectoryListActivity"
             android:label="@string/settings_bookmark_directory_list_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.about.AboutActivity"
             android:label="@string/about_title"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.MaterialFiles" />
+            android:theme="@style/OneUIAboutTheme" />
 
         <activity
             android:name="me.zhanghai.android.files.filejob.FileJobActionDialogActivity"
             android:autoRemoveFromRecents="true"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.filejob.FileJobConflictDialogActivity"
             android:autoRemoveFromRecents="true"
-            android:theme="@style/Theme.MaterialFiles.Translucent" />
+            android:theme="@style/OneUITheme" />
 
         <activity
             android:name="me.zhanghai.android.files.viewer.text.TextEditorActivity"
             android:label="@string/text_editor_title"
-            android:theme="@style/Theme.MaterialFiles">
+            android:theme="@style/OneUITheme">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -274,7 +270,7 @@
         <activity
             android:name="me.zhanghai.android.files.viewer.image.ImageViewerActivity"
             android:label="@string/image_viewer_title"
-            android:theme="@style/Theme.MaterialFiles.Immersive">
+            android:theme="@style/OneUITheme.Immersive">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -318,7 +314,7 @@
         <!-- We need to reference the MD3 theme in XML for R8 to keep relevant resources. -->
         <activity
             android:name=".KeepMd3Resources"
-            android:theme="@style/Theme.MaterialFiles.Md3"
+            android:theme="@style/OneUITheme.Md3"
             tools:ignore="MissingClass" />
     </application>
 </manifest>
