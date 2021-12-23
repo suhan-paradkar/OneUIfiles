@@ -270,7 +270,7 @@
         <activity
             android:name="me.zhanghai.android.files.viewer.image.ImageViewerActivity"
             android:label="@string/image_viewer_title"
-            android:theme="@style/OneUITheme.Immersive">
+            android:theme="@style/OneUITheme">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -310,11 +310,5 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
-
-        <!-- We need to reference the MD3 theme in XML for R8 to keep relevant resources. -->
-        <activity
-            android:name=".KeepMd3Resources"
-            android:theme="@style/OneUITheme.Md3"
-            tools:ignore="MissingClass" />
     </application>
 </manifest>
