@@ -155,7 +155,7 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
                         </me.zhanghai.android.foregroundcompat.ForegroundLinearLayout>
 
-                        <me.zhanghai.android.foregroundlcompat.ForegroundLinearLayout
+                        <me.zhanghai.android.foregroundcompat.ForegroundLinearLayout
                             android:id="@+id/licensesLayout"
                             android:layout_width="match_parent"
                             android:layout_height="?listPreferredItemHeightSmall"
