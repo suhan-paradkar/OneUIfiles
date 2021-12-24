@@ -23,7 +23,7 @@
             android:layout_gravity="bottom"
             android:background="?colorControlHighlight" />
 
-        <com.google.android.material.tabs.TabLayout
+        <de.dlyt.yanndroid.oneui.view.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

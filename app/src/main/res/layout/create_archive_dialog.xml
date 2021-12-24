@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     android:paddingTop="@dimen/abc_dialog_title_divider_material">
 
-    <androidx.core.widget.NestedScrollView
+    <de.dlyt.yanndroid.oneui.view.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
@@ -62,5 +62,5 @@
                     android:visibility="@integer/create_archive_type_seven_z_visibility" />
             </me.zhanghai.android.files.filelist.CreateArchiveTypeRadioGroup>
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+    </de.dlyt.yanndroid.oneui.view.NestedScrollView>
 </FrameLayout>

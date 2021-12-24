@@ -5,9 +5,7 @@
   ~ All Rights Reserved.
   -->
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<de.dlyt.yanndroid.oneui.layout.CoordinatorLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
@@ -20,7 +18,7 @@
         app:liftOnScroll="true"
         app:liftOnScrollTargetViewId="@id/scrollView">
 
-        <androidx.appcompat.widget.Toolbar
+        <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
@@ -31,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.core.widget.NestedScrollView
+        <de.dlyt.yanndroid.oneui.view.NestedScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -157,7 +155,7 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
                         </me.zhanghai.android.foregroundcompat.ForegroundLinearLayout>
 
-                        <me.zhanghai.android.foregroundcompat.ForegroundLinearLayout
+                        <me.zhanghai.android.foregroundlcompat.ForegroundLinearLayout
                             android:id="@+id/licensesLayout"
                             android:layout_width="match_parent"
                             android:layout_height="?listPreferredItemHeightSmall"
@@ -356,6 +354,6 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+        </de.dlyt.yanndroid.oneui.view.NestedScrollView>
     </me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</de.dlyt.yanndroid.oneui.layout.CoordinatorLayout>

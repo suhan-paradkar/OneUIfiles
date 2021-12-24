@@ -48,12 +48,12 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:visibility="gone" />
 
-        <androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout
+        <de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
+            <de.dlyt.yanndroid.oneui.view.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -61,6 +61,6 @@
                 android:clipToPadding="false"
                 android:fitsSystemWindows="true"
                 tools:listitem="@layout/file_item" />
-        </androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout>
+        </de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout>
     </me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout>
 </merge>

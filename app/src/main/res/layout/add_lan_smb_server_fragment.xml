@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-  ~ Copyright (c) 2021 Hai Zhang <dreaming.in.code.zh@gmail.com>
-  ~ All Rights Reserved.
-  -->
-
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<de.dlyt.yanndroid.oneui.layout.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -24,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.Toolbar
+            <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
@@ -32,6 +27,7 @@
 
             <com.google.android.material.progressindicator.LinearProgressIndicator
                 android:id="@+id/progress"
+		android:style="@style/ProgressBarStyle.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -43,17 +39,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout
+        <de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
+            <de.dlyt.yanndroid.oneui.view.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:scrollbars="vertical" />
-        </androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout>
+        </de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout>
     </me.zhanghai.android.files.ui.CoordinatorScrollingLinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</de.dlyt.yanndroid.oneui.layout.CoordinatorLayout>

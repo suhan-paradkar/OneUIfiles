@@ -26,12 +26,12 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         android:visibility="gone" />
 
-    <androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout
+    <de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.core.widget.NestedScrollView
+        <de.dlyt.yanndroid.oneui.view.NestedScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -50,6 +50,6 @@
                 android:divider="@drawable/transparent_divider_vertical_16dp"
                 android:orientation="vertical"
                 android:showDividers="middle" />
-        </androidx.core.widget.NestedScrollView>
-    </androidx.swiperefreshlayout.widget.ThemedSwipeRefreshLayout>
+        </de.dlyt.yanndroid.oneui.view.NestedScrollView>
+    </de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout>
 </FrameLayout>

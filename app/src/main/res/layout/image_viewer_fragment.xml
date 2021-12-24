@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:background="?colorAppBarSurface">
 
-        <androidx.appcompat.widget.Toolbar
+        <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"

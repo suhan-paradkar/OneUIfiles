@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:indeterminate="true"
         android:visibility="gone"
-        style="@style/Widget.AppCompat.ProgressBar" />
+        style="@style/ProgressBarStyle.Horizontal" />
 
     <TextView
         android:id="@+id/errorText"
