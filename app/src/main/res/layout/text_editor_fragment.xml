@@ -20,7 +20,7 @@
         app:liftOnScroll="true"
         app:liftOnScrollTargetViewId="@id/scrollView">
 
-        <androidx.appcompat.widget.Toolbar
+        <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
@@ -36,7 +36,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="gone" />
+            android:visibility="gone"
+	    android:style="@style/ProgressBarStyle.Horizontal" />
 
         <TextView
             android:id="@+id/errorText"

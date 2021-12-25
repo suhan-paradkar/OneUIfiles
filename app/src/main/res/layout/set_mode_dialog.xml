@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     android:paddingTop="@dimen/abc_dialog_title_divider_material">
 
-    <androidx.core.widget.NestedScrollView
+    <de.dlyt.yanndroid.oneui.view.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
@@ -116,5 +116,5 @@
                 android:text="@string/file_properties_permissions_set_mode_uppercase_x"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+    </de.dlyt.yanndroid.oneui.view.NestedScrollView>
 </FrameLayout>

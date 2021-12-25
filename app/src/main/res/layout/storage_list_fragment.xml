@@ -20,7 +20,7 @@
         app:liftOnScroll="true"
         app:liftOnScrollTargetViewId="@id/recyclerView">
 
-        <androidx.appcompat.widget.Toolbar
+        <de.dlyt.yanndroid.oneui.layout.ToolbarLayout
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
@@ -40,7 +40,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:visibility="gone" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <de.dlyt.yanndroid.oneui.view.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
