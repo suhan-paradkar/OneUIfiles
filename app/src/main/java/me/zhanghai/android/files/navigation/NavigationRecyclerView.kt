@@ -13,7 +13,7 @@ import android.view.WindowInsets
 import androidx.annotation.AttrRes
 import androidx.core.graphics.withSave
 import androidx.core.view.updatePadding
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 import me.zhanghai.android.files.R
 import me.zhanghai.android.files.util.activity
 import me.zhanghai.android.files.util.displayWidth

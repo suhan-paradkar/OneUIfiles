@@ -7,7 +7,7 @@ package me.zhanghai.android.files.util
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 
 class SelectionLiveData<Key> : MutableLiveData<Key>() {
     fun observe(owner: LifecycleOwner, adapter: RecyclerView.Adapter<*>) {

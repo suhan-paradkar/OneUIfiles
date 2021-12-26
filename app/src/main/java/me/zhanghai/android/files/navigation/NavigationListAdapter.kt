@@ -12,7 +12,7 @@ import android.graphics.drawable.Drawable
 import android.graphics.drawable.InsetDrawable
 import android.graphics.drawable.RippleDrawable
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
 import me.zhanghai.android.files.R

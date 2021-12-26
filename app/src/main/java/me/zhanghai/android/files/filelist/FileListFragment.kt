@@ -32,13 +32,13 @@ import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.updatePaddingRelative
-import androidx.drawerlayout.widget.DrawerLayout
+import de.dlyt.yanndroid.oneui.layout.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import de.dlyt.yanndroid.oneui.view.RecyclerView
+import de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.leinardi.android.speeddial.SpeedDialView
 import java8.nio.file.AccessDeniedException
