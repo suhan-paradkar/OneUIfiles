@@ -41,7 +41,8 @@
         <activity
             android:name="me.zhanghai.android.files.filelist.FileListActivity"
             android:visibleToInstantApps="true"
-            tools:ignore="UnusedAttribute">
+            tools:ignore="UnusedAttribute"
+	    android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -127,7 +128,8 @@
             android:name="me.zhanghai.android.files.filelist.OpenFileActivity"
             android:documentLaunchMode="always"
             android:excludeFromRecents="true"
-            android:theme="@style/OneUITheme">
+            android:theme="@style/OneUITheme"
+	    android:exported="true">
             <intent-filter>
                 <action android:name="me.zhanghai.android.files.intent.action.OPEN_FILE" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -193,7 +195,8 @@
             android:name="me.zhanghai.android.files.ftpserver.FtpServerActivity"
             android:label="@string/ftp_server_title"
             android:launchMode="singleTop"
-            android:theme="@style/OneUITheme">
+            android:theme="@style/OneUITheme"
+	    android:exported="true">
             <intent-filter>
                 <action android:name="me.zhanghai.android.files.intent.action.MANAGE_FTP_SERVER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -208,7 +211,8 @@
             android:name="me.zhanghai.android.files.settings.SettingsActivity"
             android:label="@string/settings_title"
             android:launchMode="singleTop"
-            android:theme="@style/OneUITheme">
+            android:theme="@style/OneUITheme"
+	    android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -252,7 +256,8 @@
         <activity
             android:name="me.zhanghai.android.files.viewer.text.TextEditorActivity"
             android:label="@string/text_editor_title"
-            android:theme="@style/OneUITheme">
+            android:theme="@style/OneUITheme"
+	    android:exported="true">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -270,7 +275,8 @@
         <activity
             android:name="me.zhanghai.android.files.viewer.image.ImageViewerActivity"
             android:label="@string/image_viewer_title"
-            android:theme="@style/OneUITheme">
+            android:theme="@style/OneUITheme"
+	    android:exported="true">
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
