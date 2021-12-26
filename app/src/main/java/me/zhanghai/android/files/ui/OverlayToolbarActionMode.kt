@@ -6,7 +6,7 @@
 package me.zhanghai.android.files.ui
 
 import android.view.ViewGroup
-import androidx.appcompat.widget.Toolbar
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout
 import androidx.core.view.isVisible
 import me.zhanghai.android.files.util.fadeInUnsafe
 import me.zhanghai.android.files.util.fadeOutUnsafe

@@ -5,7 +5,7 @@
 
 package me.zhanghai.android.files.ui
 
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 
 abstract class SimpleAdapter<T, VH : RecyclerView.ViewHolder> : RecyclerView.Adapter<VH>() {
     private val _list = mutableListOf<T>()

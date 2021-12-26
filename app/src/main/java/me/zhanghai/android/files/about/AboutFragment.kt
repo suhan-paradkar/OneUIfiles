@@ -34,7 +34,7 @@ class AboutFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         val activity = requireActivity() as AppCompatActivity
-        activity.setSupportActionBar(binding.toolbar)
+        activity.setSupportActionBar(binding.getToolbar())
         activity.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         binding.gitHubLayout.setOnClickListener { startActivitySafe(GITHUB_URI.createViewIntent()) }
         binding.licensesLayout.setOnClickListener { LicensesDialogFragment.show(this) }

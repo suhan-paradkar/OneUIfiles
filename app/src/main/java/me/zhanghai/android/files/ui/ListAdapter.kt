@@ -7,7 +7,7 @@ package me.zhanghai.android.files.ui
 
 import androidx.recyclerview.widget.AdapterListUpdateCallback
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 
 abstract class ListAdapter<T, VH : RecyclerView.ViewHolder>(
     callback: DiffUtil.ItemCallback<T>

@@ -8,7 +8,7 @@ package me.zhanghai.android.files.ui
 import android.os.Handler
 import android.os.Looper
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 import me.zhanghai.android.files.R
 import me.zhanghai.android.files.util.getAnimation
 

@@ -26,19 +26,19 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.appcompat.widget.Toolbar
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.updatePaddingRelative
-import androidx.drawerlayout.widget.DrawerLayout
+import de.dlyt.yanndroid.oneui.layout.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import de.dlyt.yanndroid.oneui.view.RecyclerView
+import de.dlyt.yanndroid.oneui.layout.SwipeRefreshLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
 import com.leinardi.android.speeddial.SpeedDialView
 import java8.nio.file.AccessDeniedException
@@ -175,7 +175,7 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
         navigationFragment.listener = this
         val activity = requireActivity() as AppCompatActivity
         activity.setTitle(R.string.file_list_title)
-        activity.setSupportActionBar(binding.toolbar)
+        activity.setSupportActionBar(binding.getToolbar())
         overlayActionMode = OverlayToolbarActionMode(binding.overlayToolbar)
         bottomActionMode = PersistentBarLayoutToolbarActionMode(
             binding.persistentBarLayout, binding.bottomBarLayout, binding.bottomToolbar
@@ -197,7 +197,7 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
             )
         }
         binding.swipeRefreshLayout.setOnRefreshListener { this.refresh() }
-        binding.recyclerView.layoutManager = GridLayoutManager(activity, /* TODO */ 1)
+        binding.recyclerView.layoutManager = RecyclerView.LayoutManager(activity, /* TODO */ 1)
         adapter = FileListAdapter(this)
         binding.recyclerView.adapter = adapter
         val fastScroller = ThemedFastScroller.create(binding.recyclerView)
@@ -446,8 +446,8 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
 
     fun onBackPressed(): Boolean {
         val drawerLayout = binding.drawerLayout
-        if (drawerLayout != null && drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
+        if (drawerLayout != null) {
+            drawerLayout.setDrawerOpen(true, true)
             return true
         }
         if (binding.speedDialView.isOpen) {
@@ -464,9 +464,9 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
     private fun onPersistentDrawerOpenChanged(open: Boolean) {
         binding.persistentDrawerLayout?.let {
             if (open) {
-                it.openDrawer(GravityCompat.START)
+                it.setDrawerOpen(true, true)
             } else {
-                it.closeDrawer(GravityCompat.START)
+                it.setDrawerOpen(false, true)
             }
         }
     }
@@ -1259,7 +1259,7 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
     }
 
     override fun closeNavigationDrawer() {
-        binding.drawerLayout?.closeDrawer(GravityCompat.START)
+        binding.drawerLayout?.setDrawerOpen(false, true)
     }
 
     companion object {

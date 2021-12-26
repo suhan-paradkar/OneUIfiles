@@ -8,7 +8,7 @@ package me.zhanghai.android.files.ui
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 import me.zhanghai.android.files.util.layoutInflater
 
 class StaticAdapter(
