@@ -26,7 +26,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.appcompat.widget.Toolbar
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
@@ -446,8 +446,8 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
 
     fun onBackPressed(): Boolean {
         val drawerLayout = binding.drawerLayout
-        if (drawerLayout != null && drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
+        if (drawerLayout != null) {
+            drawerLayout.setDrawerOpen(true, true)
             return true
         }
         if (binding.speedDialView.isOpen) {
@@ -464,9 +464,9 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
     private fun onPersistentDrawerOpenChanged(open: Boolean) {
         binding.persistentDrawerLayout?.let {
             if (open) {
-                it.openDrawer(GravityCompat.START)
+                it.setDrawerOpen(true, true)
             } else {
-                it.closeDrawer(GravityCompat.START)
+                it.setDrawerOpen(false, true)
             }
         }
     }
@@ -1259,7 +1259,7 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
     }
 
     override fun closeNavigationDrawer() {
-        binding.drawerLayout?.closeDrawer(GravityCompat.START)
+        binding.drawerLayout?.setDrawerOpen(false, true)
     }
 
     companion object {

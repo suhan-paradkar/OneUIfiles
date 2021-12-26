@@ -15,7 +15,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.TextView
 import androidx.annotation.AttrRes
-import androidx.appcompat.widget.Toolbar
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import me.zhanghai.android.files.util.shortAnimTime
 

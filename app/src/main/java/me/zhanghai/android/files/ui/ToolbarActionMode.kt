@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import androidx.annotation.DrawableRes
 import androidx.annotation.MenuRes
 import androidx.annotation.StringRes
-import androidx.appcompat.widget.Toolbar
+import de.dlyt.yanndroid.oneui.layout.ToolbarLayout
 
 abstract class ToolbarActionMode(
     private val bar: ViewGroup,
