@@ -292,7 +292,8 @@
             android:name="me.zhanghai.android.files.ftpserver.FtpServerTileService"
             android:icon="@drawable/shared_directory_icon_white_24dp"
             android:label="@string/ftp_server_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+	    android:exported= "false">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
