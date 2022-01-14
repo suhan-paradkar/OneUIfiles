@@ -162,7 +162,7 @@ dependencies {
     implementation 'org.tukaani:xz:1.9'
     implementation 'org.apache.ftpserver:ftpserver-core:1.1.2'
     // Also a dependency of jCIFS-NG and Junrar.
-    implementation 'org.slf4j:slf4j-android:1.7.32'
+    implementation 'org.slf4j:slf4j-android:1.7.33'
     implementation 'io.github.yanndroid:oneui:2.2.0'
 
 }
