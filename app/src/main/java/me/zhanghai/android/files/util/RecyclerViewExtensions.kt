@@ -5,7 +5,7 @@
 
 package me.zhanghai.android.files.util
 
-import androidx.recyclerview.widget.RecyclerView
+import de.dlyt.yanndroid.oneui.view.RecyclerView
 
 inline fun RecyclerView.addOnScrollListener(
     crossinline onScrollStateChanged: (recyclerView: RecyclerView, newState: Int) -> Unit =
